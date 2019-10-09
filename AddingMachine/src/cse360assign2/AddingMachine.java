@@ -7,7 +7,7 @@ public class AddingMachine {
 	
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
-		history = "myCalculator";
+		history = "";
 	}
 	
 	public int getTotal () {
@@ -31,5 +31,6 @@ public class AddingMachine {
 
 	public void clear() {
 		total = 0;
+		history = "";
 	}
 }
