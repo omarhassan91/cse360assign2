@@ -3,28 +3,33 @@ package cse360assign2;
 public class AddingMachine {
 
 	private int total;
+	private String history;
 	
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
+		history = "myCalculator";
 	}
 	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	public void add (int value) {
+		total += value;
+		history += " + " + value;
 		
 	}
 	
 	public void subtract (int value) {
-		
+		total -= value;
+		history += " - " + value;
 	}
 		
 	public String toString () {
-		return "";
+		return history;
 	}
 
 	public void clear() {
-	
+		total = 0;
 	}
 }
