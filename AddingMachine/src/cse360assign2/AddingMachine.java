@@ -31,6 +31,6 @@ public class AddingMachine {
 
 	public void clear() {
 		total = 0;
-		history = "";
+		history = "0";
 	}
 }
